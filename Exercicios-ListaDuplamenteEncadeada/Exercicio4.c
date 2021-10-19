@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <locale.h>
 
 //Escreva  uma  rotina  que  receba  uma  lista  e  um  número  X  e  retorne  o  número  de  nós  da  lista  que possuem valores maiores do que o número X
 
@@ -67,6 +67,7 @@ int Quant(Lista *L1, int numero)
 
 int main()
 {
+	setlocale(LC_ALL, "Portuguese");
 	Lista L1;
 	int numero, cont = 0;
 	int op;

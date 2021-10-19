@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <locale.h>
 
 //Escreva uma rotina recursiva para determinar o número de elementos de uma lista.
 
@@ -59,6 +59,7 @@ int Quant(Elemento quant)
 
 int main()
 {
+	setlocale(LC_ALL, "Portuguese");
 	Lista L1;
 	int op;
 	Elemento quant;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <locale.h>
 
 //Escreva uma rotina que retorne o número de elementos de uma lista.
 
@@ -64,6 +64,7 @@ void Quant(Lista *L1)
 
 int main()
 {
+	setlocale(LC_ALL, "Portuguese");
 	Lista L1;
 	int op;
 	do
