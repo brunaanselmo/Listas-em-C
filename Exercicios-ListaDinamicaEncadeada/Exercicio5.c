@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 
-//Escreva  uma  rotina  que  receba  uma  lista  e  um  número  X  e  retorne  o  núero  de  nós  da  lista  que possuem valores menores do que o número X.
+//Escreva  uma  rotina  que  receba  uma  lista  e  um  nÃºmero  X  e  retorne  o  nÃºmero  de  nÃ³s  da  lista  que possuem valores menores do que o nÃºmero X.
 
 struct No
 {
@@ -58,7 +58,7 @@ int Quant(Lista *L1, int numero)
 			cont++;
 		aux = aux->prox;
 	}
-	//printf("A quantidade de vezes que o número %d aparece na lista é %d\n",numero, cont);
+	//printf("A quantidade de vezes que o nÃºmero %d aparece na lista Ã© %d\n",numero, cont);
 	return (cont);
 }
 
@@ -69,10 +69,10 @@ int main()
 	int op;
 	do
 	{
-		printf("Digite a opção que vc deseja: \n");
+		printf("Digite a opÃ§Ã£o que vc deseja: \n");
 		printf("1 - Criar Lista\n");
 		printf("2 - Inserir elementos na lista\n");
-		printf("3 - Mostrar a quantidade de números na lista que são menores que o número X\n");
+		printf("3 - Mostrar a quantidade de nÃºmeros na lista que sÃ£o menores que o nÃºmero X\n");
 		printf("Digite 0 para sair\n");
 		scanf("%d", &op);
 		switch (op)
@@ -88,10 +88,10 @@ int main()
 			Insere(&L1);
 			break;
 		case 3:
-			printf("\nDigite o número que vc deseja ver a quantidade de números menores que ele \n");
+			printf("\nDigite o nÃºmero que vc deseja ver a quantidade de nÃºmeros menores que ele \n");
 			scanf("%d", &numero);
 			cont = Quant(&L1, numero);
-			printf("\nA quantidade de números menores que o número %d é: %d\n\n", numero, cont);
+			printf("\nA quantidade de nÃºmeros menores que o nÃºmero %d Ã©: %d\n\n", numero, cont);
 			break;
 		}
 		system("PAUSE");
